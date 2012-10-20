@@ -90,7 +90,8 @@ header h2 {
 }
 
 .inner {
-  width: 620px;
+  background: transparent url(../images/logo-emboss.png) right top no-repeat;
+  width: 780px;
   margin: 0 auto;
 }
 
@@ -166,7 +167,7 @@ a.button span {
 }
 
 code, pre {
-  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+  font-family: 'Bitstream Vera Sans Mono', 'Courier New', monospace;
   color: #222;
   margin-bottom: 30px;
   font-size: 14px;
