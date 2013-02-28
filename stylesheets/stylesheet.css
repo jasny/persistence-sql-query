@@ -1,27 +1,8 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+img {
+  margin: 0 !important;
 }
+<<<<<<< HEAD
+=======
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
@@ -105,7 +86,7 @@ header .back {
 }
 
 #downloads {
-  margin-bottom: 35px;
+  margin-bottom: 40px;
 }
 
 a.button {
@@ -124,8 +105,7 @@ a.button {
   display: block;
   float: left;
   width: 179px;
-  margin-right: 14px;
-  margin-bottom: 5px;  
+  margin-right: 14px;  
   background: #fdfdfd; /* Old browsers */
   background: -moz-linear-gradient(top,  #fdfdfd 0%, #f2f2f2 100%); /* FF3.6+ */
   background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fdfdfd), color-stop(100%,#f2f2f2)); /* Chrome,Safari4+ */
@@ -152,15 +132,14 @@ a.button:hover {
   background: linear-gradient(top,  #fdfdfd 0%,#f6f6f6, 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fdfdfd', endColorstr='#f6f6f6',GradientType=0 ); /* IE6-9 */
 }
+
 a.button span {
   padding-left: 50px;
   display: block;
   height: 23px;
 }
-#downloads a.button:last-child {
-  margin-right: 0;
-}
 
+>>>>>>> parent of 5fb813b... Fixed responsive issues docs
 #download-zip span {
   background: transparent url(../images/zip-icon.png) 12px 50% no-repeat;
 }
@@ -170,14 +149,8 @@ a.button span {
 #view-on-github span {
   background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
 }
-#view-on-jasny span {
-  background: transparent url(../images/jasny-icon.png) 12px 50% no-repeat;
-}
-#view-on-github span {
-  background: transparent url(../images/octocat-icon.png) 12px 50% no-repeat;
-}
-#view-on-twitter span {
-  background: transparent url(../images/twitter-icon.png) 12px 50% no-repeat;
+#view-on-github {
+  margin-right: 0;
 }
 
 code, pre {
@@ -205,6 +178,9 @@ pre code {
   background-color: #303030;
   border: none;
   padding: 0;
+<<<<<<< HEAD
+}
+=======
 }
 
 ul, ol, dl {
@@ -252,9 +228,6 @@ form {
   
 }
 
-abbr {
-  border-bottom: 1px dashed #6d6d6d;
-}
 
 /* GENERAL ELEMENT TYPE STYLES */
 
@@ -355,15 +328,17 @@ footer a:hover {
 * html .clearfix {height: 1%;}
 .clearfix {display: block;}
 
-.theme-toggle { display: inline-block; width: 250px; border:1px solid #bfbfbf; padding:4px 21px; font-size:1.2em; text-align:center; font-weight:bold; color:#6a6a6a; background:-webkit-linear-gradient(top, #efefef 0%,#dcdcdc 100%); text-decoration:none; text-shadow:0 1px 0 rgba(255,255,255,0.8); border-radius:3px; box-shadow:0 1px 0 rgba(255,255,255,0.6),0 1px 0 rgba(255,255,255,0.7) inset; }
-.theme-toggle:hover{ color:#7c7c7c; background:-webkit-linear-gradient(top, #fdfdfd 0%,#dcdcdc 100%); }
-.theme-toggle:active { color:#444; background:-webkit-linear-gradient(top, #dcdcdc 0%,#efefef 100%); }
-
 /* #Media Queries
 ================================================== */
 
 /* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px) {}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px) {
   header {
     padding-top: 10px;
     padding-bottom: 10px;
@@ -371,19 +346,12 @@ footer a:hover {
   #downloads {
     margin-bottom: 25px;
   }
+  #download-zip, #download-tar-gz {
+    display: none;
+  }
   .inner {
     width: 94%;
     margin: 0 auto;
-  }
-}
-
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
-
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-  #download-zip, #download-tar-gz {
-    display: none;
   }
 }
 
@@ -392,3 +360,4 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+>>>>>>> parent of 5fb813b... Fixed responsive issues docs
