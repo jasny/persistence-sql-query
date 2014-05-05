@@ -660,8 +660,10 @@ class DBQuery_Splitter
      */
     public static function splitTables($sql)
     {
+		if(!is_array($sql) && self::getQueryType($sql)) $parts = self::split($sql);
+		else $parts = $sql;
+		
         if (is_array($sql) || self::getQueryType($sql)) {
-            $parts = self::split($sql);
             if (array_key_exists('from', $parts)) $sql = & $parts['from'];
             elseif (array_key_exists('table', $parts)) $sql = & $parts['table'];
             elseif (array_key_exists('into', $parts)) $sql = & $parts['into'];
