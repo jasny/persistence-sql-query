@@ -8,6 +8,8 @@ require_once __DIR__ . '/DBQuery/Splitter.php';
  * Query builder for MySQL query statements.
  * All editing statements support fluent interfaces.
  * 
+ * @method static DBQuery select()
+ *
  * @package DBQuery
  */
 class DBQuery
