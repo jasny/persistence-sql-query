@@ -9,10 +9,11 @@
         "source": "https://github.com/jasny/persist-sql-query"
     },
     "require": {
-        "php": ">=7.4.0"
+        "php": ">=8.0.0"
     },
     "require-dev": {
-        "jasny/php-code-quality": "2.6.*"
+        "jasny/php-code-quality": "3.0.*",
+        "phpunit/phpunit": "11.*"
     },
     "autoload": {
         "psr-4": {
